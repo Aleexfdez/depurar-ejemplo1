@@ -8,16 +8,22 @@
 
 /* Encontrar los errores que tiene el siguiente script, usando las herramientas de depuración de Google Chrome */
 
-var nombres=[];
 
-var NUMERO_NOMBRES=10;
+var nombre=prompt("Introduce nombre:");
+    var nombres=[];
+    var NUMERO_NOMBRES=10;
 
 
+    for(var i=1;i<=NUMERO_NOMBRES;i++){
+        nombres+= (nombre=prompt("Introduce nombre:")+"\n");
+    }
+alert(nombres);
+  
 
 
-/* AVISOS (WARNING) */
+// /* AVISOS (WARNING) */
 console.warn("Mensaje warn");
-/* ERRORES */
+// /* ERRORES */
 console.error("Mensaje err");
 /* INFORMACIÓN (LOG) */
 console.log("Mensaje log");
